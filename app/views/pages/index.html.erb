@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <%= geo_chart Ahoy::Visit.group(:country).count, download: true %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <%= pie_chart Ahoy::Visit.group(:os).count, download: true %>
+    </div>
+    <div class="col-4">
+      <%= pie_chart Ahoy::Visit.group(:browser).count, download: true %>
+    </div>
+    <div class="col-4">
+      <%= pie_chart Ahoy::Visit.group(:device_type).count, download: true %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <%= line_chart Ahoy::Visit.group(:started_at).count, download: true %>
+    </div>
+  </div>
+</div>

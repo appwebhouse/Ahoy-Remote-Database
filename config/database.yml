@@ -1,0 +1,26 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: remote_db_development
+
+test:
+  <<: *default
+  database: remote_db_test
+
+production:
+  <<: *default
+  database: remote_db_production
+  username: remote_db
+  password: <%= ENV['REMOTE_DB_DATABASE_PASSWORD'] %>
+
+remote_db:
+  adapter: mysql2
+  database: <%= ENV['REMOTE_DB_NAME'] %>
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: <%= ENV['REMOTE_DB_USERNAME'] %>
+  password: <%= ENV['REMOTE_DB_PASSWORD'] %>
+  host: <%= ENV['REMOTE_DB_HOST'] %>
