@@ -3,6 +3,8 @@
 Demo app that showcases use Ahoy gem with remote MySQL database on Rails 5.1.
 Simple one page with charts of statistics.
 
+![](public/screenshot.png?raw=true)
+
 ## Table of Contents
  - [Getting Started](#getting-started)
  - [File Structure](#file-structure)
