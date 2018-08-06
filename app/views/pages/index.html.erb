@@ -6,14 +6,17 @@
   </div>
 
   <div class="row">
-    <div class="col-4">
+    <div class="col-3">
       <%= pie_chart Ahoy::Visit.group(:os).count, download: true %>
     </div>
-    <div class="col-4">
+    <div class="col-3">
       <%= pie_chart Ahoy::Visit.group(:browser).count, download: true %>
     </div>
-    <div class="col-4">
+    <div class="col-3">
       <%= pie_chart Ahoy::Visit.group(:device_type).count, download: true %>
+    </div>
+    <div class="col-3">
+      <%= pie_chart @locales, download: true %>
     </div>
   </div>
 

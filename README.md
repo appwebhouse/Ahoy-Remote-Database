@@ -1,6 +1,8 @@
 # Rails 5.1 Ahoy Remote Database
 
-Demo app that showcases use Ahoy gem with remote MySQL database on Rails 5.1.
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/appwebhouse/Ahoy-Remote-Database)
+
+Demo app that showcases use Ahoy gem with remote MySQL database on Rails 5.1.   
 Simple one page with charts of statistics.
 
 ![](public/screenshot.png?raw=true)
