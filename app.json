@@ -1,0 +1,7 @@
+{
+  "name": "Rails 5.1 Ahoy Remote Database",
+  "description": "Demo app that showcases use Ahoy gem with remote MySQL database on Rails 5.1",
+  "repository": "https://github.com/appwebhouse/Ahoy-Remote-Database",
+  "logo": "https://avatars1.githubusercontent.com/u/26085294?s=200&v=4",
+  "keywords": ["rails", "ahoy", "remote db"]
+}
